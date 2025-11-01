@@ -17,7 +17,7 @@
   },
   "packageManager": "pnpm@10.20.0",
   "dependencies": {
-    "@nuxtjs/google-adsense": "^3.0.0",
+    "@nuxtjs/google-adsense": "latest",
     "@nuxt/content": "^3.8.0",
     "@nuxt/devtools": "2.7.0",
     "@nuxt/image": "1.11.0",
