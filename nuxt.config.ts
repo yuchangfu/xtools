@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts',
     'vue-sonner/nuxt',
+    ['@nuxtjs/google-adsense', {
+      id: 'ca-pub-4041240970609634'
+    }],
   ],
 
   imports: {
