@@ -8,9 +8,6 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts',
     'vue-sonner/nuxt',
-    ['@nuxtjs/google-adsense', {
-      id: 'ca-pub-4041240970609634',
-    }],
   ],
 
   imports: {
@@ -21,7 +18,13 @@ export default defineNuxtConfig({
       },
     ],
   },
-
+  app: {
+    head: {
+      async: 'async',
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4041240970609634',
+      crossorigin: 'anonymous',
+    },
+  },
   devtools: {
     enabled: false,
   },
@@ -64,7 +67,7 @@ export default defineNuxtConfig({
 
   routeRules: {
     // Needed to activate preview on Nuxt Studio
-    '/': { prerender: false },
+    '/': {prerender: false},
   },
 
   experimental: {
@@ -98,8 +101,8 @@ export default defineNuxtConfig({
 
   i18n: {
     locales: [
-      { code: 'en', name: 'English', language: 'en-US' },
-      { code: 'fr', name: 'French', language: 'fr-FR' },
+      {code: 'en', name: 'English', language: 'en-US'},
+      {code: 'fr', name: 'French', language: 'fr-FR'},
     ],
     detectBrowserLanguage: {
       useCookie: true,
